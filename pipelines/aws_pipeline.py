@@ -12,7 +12,6 @@ def upload_s3_pipeline(**kwargs):
     # Load file paths from XComs
     tracks_file_path = ti.xcom_pull(task_ids='fetch_playlist_tracks', key='return_value')
     artist_genre_file_path = ti.xcom_pull(task_ids='fetch_artist_genres', key='return_value')
-    audio_features_file_path = ti.xcom_pull(task_ids='fetch_audio_features', key='return_value')
 
     # Upload tracks data
     if tracks_file_path:
@@ -23,8 +22,3 @@ def upload_s3_pipeline(**kwargs):
     if artist_genre_file_path:
         df_artist_genres = pd.read_csv(artist_genre_file_path)
         upload_to_s3(df_artist_genres, BUCKET_NAME, f"artist_genres/{artist_genre_file_path.split('/')[-1]}", REGION_NAME)
-
-    # Upload audio features data
-    if audio_features_file_path:
-        df_audio_features = pd.read_csv(audio_features_file_path)
-        upload_to_s3(df_audio_features, BUCKET_NAME, f"audio_features/{audio_features_file_path.split('/')[-1]}", REGION_NAME)

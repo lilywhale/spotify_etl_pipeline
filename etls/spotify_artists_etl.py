@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
 import time
-import ast
 import re
 
 
@@ -11,6 +10,7 @@ def get_artist_genre(access_token: str, df_tracks: pd.DataFrame) -> pd.DataFrame
 
     # Get unique artist IDs from df_tracks
     unique_artist_ids = df_tracks['ARTIST_ID'].unique()
+    print(len(unique_artist_ids))
 
     for artist_id in unique_artist_ids:
         url = f"https://api.spotify.com/v1/artists/{artist_id}"
@@ -46,18 +46,25 @@ def get_artist_genre(access_token: str, df_tracks: pd.DataFrame) -> pd.DataFrame
     return df
 
 
-def extract_image_url(images: str) -> str:
-    # Parse string representation of the list to actual list
-    images_list = ast.literal_eval(images)
-    # Filter for highest resolution (640x640) if available
-    high_res_image = next((img['url'] for img in images_list if img['height'] == 640), images_list[0]['url'])
-    return high_res_image
+def extract_image_url(images):
+    """
+    Extracts the highest resolution image URL from the images list.
+    """
+    if isinstance(images, list) and len(images) > 0:
+        # Filter for highest resolution (640x640) if available
+        high_res_image = next((img['url'] for img in images if img.get('height') == 640), images[0]['url'])
+        return high_res_image
+    return None
 
 
 # Extract followers total
 def extract_followers(followers):
-    followers_dict = ast.literal_eval(followers)
-    return followers_dict['total']
+    """
+    Extracts the total number of followers from the followers dictionary.
+    """
+    if isinstance(followers, dict):
+        return followers.get('total', 0)
+    return 0
 
 
 # Function to clean the text
@@ -74,27 +81,33 @@ def clean_name(name):
 
 
 def process_artist_data(df: pd.DataFrame) -> pd.DataFrame:
-
+    """
+    Processes the artist data DataFrame.
+    """
     # Drop unnecessary columns
     df = df.drop(columns=['external_urls', 'uri'])
     df = df.drop_duplicates(subset='id', keep='first')
 
+    # Extract followers and image URL
     df['followers'] = df['followers'].apply(extract_followers)
     df['image_url'] = df['images'].apply(extract_image_url)
 
     # Drop the original images column
     df = df.drop(columns=['images', 'type'])
 
-    # Convert genres from string to list
-    df['genres'] = df['genres'].apply(ast.literal_eval)
-    df = df[df['genres'].apply(lambda x: isinstance(x, list) and len(x) > 0)]
+    # Ensure genres is a list
+    df['genres'] = df['genres'].apply(lambda x: x if isinstance(x, list) else [])
+
+    # Filter out artists with no genres
+    df = df[df['genres'].apply(lambda x: len(x) > 0)]
 
     # Explode genres to create one row per artist-genre combination
     df = df.explode('genres').reset_index(drop=True)
 
-    # Apply the cleaning function to 'track_name' and 'album_name'
+    # Clean artist names
     df['name'] = df['name'].apply(clean_name)
 
+    # Rename columns
     df = df.rename(columns={
         'id': 'ARTIST_ID',
         'name': 'ARTIST_NAME',

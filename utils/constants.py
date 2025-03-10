@@ -16,6 +16,6 @@ SPOTIFY_SECRET = os.getenv('spotify_secret_key')
 SPOTIFY_CLIENT_ID = os.getenv('spotify_client_id')
 
 
-MOST_LISTENED_TRACKS_PLAYLIST_ID = '37i9dQZEVXbMDoHDwVN2tF'
+MOST_LISTENED_TRACKS_PLAYLIST_ID = '2EWpe7b6xA25BK5EI6rXhW'
 
 OUTPUT_PATH = os.getenv('output_path')

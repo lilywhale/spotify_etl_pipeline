@@ -4,17 +4,18 @@ from airflow.operators.python import PythonOperator
 import os
 import sys
 
-from pipelines.spotify_pipeline import fetch_spotify_secret, fetch_playlist_tracks, fetch_artist_genres, fetch_audio_features
-from pipelines.aws_pipeline import upload_s3_pipeline
-
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from pipelines.spotify_pipeline import fetch_spotify_secret, fetch_playlist_tracks, fetch_artist_genres
+from pipelines.aws_pipeline import upload_s3_pipeline
 
 default_args = {
     'owner': 'Camille JMML',
-    'start_date': datetime(2025, 2, 21)
+    'start_date': datetime(2025, 2, 26)
 }
 
 file_postfix = datetime.now().strftime("%Y%m%d")
+
 
 dag = DAG(
     dag_id='spotify_etl_pipeline',
@@ -50,15 +51,6 @@ fetch_artists = PythonOperator(
     dag=dag
 )
 
-# Task 4: Fetch track audio features
-fetch_audio = PythonOperator(
-    task_id='fetch_audio_features',
-    python_callable=fetch_audio_features,
-    op_kwargs={'file_postfix': file_postfix},
-    provide_context=True,
-    dag=dag
-)
-
 # Task 5: Upload all data to S3
 upload_s3 = PythonOperator(
     task_id='upload_to_s3',
@@ -68,4 +60,4 @@ upload_s3 = PythonOperator(
 )
 
 # Define task dependencies
-fetch_secret >> fetch_tracks >> [fetch_artists, fetch_audio] >> upload_s3
+fetch_secret >> fetch_tracks >> fetch_artists >> upload_s3

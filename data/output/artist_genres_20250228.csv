@@ -1,0 +1,42 @@
+ARTIST_ID,ARTIST_NAME,GENRES,FOLLOWERS,ARTIST_POPULARITY,HREF,IMAGE_URL
+1HY2Jd0NmPuamShAr6KMms,Lady Gaga,art pop,35652882,93,https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms,https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6
+1HY2Jd0NmPuamShAr6KMms,Lady Gaga,pop,35652882,93,https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms,https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6
+2YZyLoL8N0Wb9xBt1NhZWg,Kendrick Lamar,hip hop,39007914,97,https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg,https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918
+2YZyLoL8N0Wb9xBt1NhZWg,Kendrick Lamar,west coast hip hop,39007914,97,https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg,https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918
+3eVa5w3URK5duf6eyVDbu9,ROSÉ,k-pop,10529389,86,https://api.spotify.com/v1/artists/3eVa5w3URK5duf6eyVDbu9,https://i.scdn.co/image/ab6761610000e5eb727a1f1f508238a20ac9fdbf
+4q3ewBCX7sLwd24euuV69X,Bad Bunny,reggaeton,92170450,100,https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X,https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13
+4q3ewBCX7sLwd24euuV69X,Bad Bunny,trap latino,92170450,100,https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X,https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13
+4q3ewBCX7sLwd24euuV69X,Bad Bunny,latin,92170450,100,https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X,https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13
+4q3ewBCX7sLwd24euuV69X,Bad Bunny,urbano latino,92170450,100,https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X,https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13
+1oSPZhvZMIrWW5I41kPkkY,Jimin,k-pop,9940240,85,https://api.spotify.com/v1/artists/1oSPZhvZMIrWW5I41kPkkY,https://i.scdn.co/image/ab6761610000e5ebcb08296cca5a2d197caabb79
+250b0Wlc5Vk0CoUsaCY84M,JENNIE,k-pop,9222701,85,https://api.spotify.com/v1/artists/250b0Wlc5Vk0CoUsaCY84M,https://i.scdn.co/image/ab6761610000e5eba8e3627e392a1d8f539cb575
+6pV5zH2LzjOUHaAvENdMMa,Neton Vega,corrido,1521186,89,https://api.spotify.com/v1/artists/6pV5zH2LzjOUHaAvENdMMa,https://i.scdn.co/image/ab6761610000e5eb2fcd184b0b566e4e8f550ef8
+6pV5zH2LzjOUHaAvENdMMa,Neton Vega,corridos tumbados,1521186,89,https://api.spotify.com/v1/artists/6pV5zH2LzjOUHaAvENdMMa,https://i.scdn.co/image/ab6761610000e5eb2fcd184b0b566e4e8f550ef8
+6pV5zH2LzjOUHaAvENdMMa,Neton Vega,corridos bélicos,1521186,89,https://api.spotify.com/v1/artists/6pV5zH2LzjOUHaAvENdMMa,https://i.scdn.co/image/ab6761610000e5eb2fcd184b0b566e4e8f550ef8
+6pV5zH2LzjOUHaAvENdMMa,Neton Vega,electro corridos,1521186,89,https://api.spotify.com/v1/artists/6pV5zH2LzjOUHaAvENdMMa,https://i.scdn.co/image/ab6761610000e5eb2fcd184b0b566e4e8f550ef8
+3TVXtAsR1Inumwj472S9r4,Drake,rap,96808034,97,https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4,https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9
+3TVXtAsR1Inumwj472S9r4,Drake,hip hop,96808034,97,https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4,https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9
+4QFG9KrGWEbr6hNA58CAqE,Alemán,mexican hip hop,5979962,80,https://api.spotify.com/v1/artists/4QFG9KrGWEbr6hNA58CAqE,https://i.scdn.co/image/ab6761610000e5eb6c1d2882997b15d14a7a7661
+4QFG9KrGWEbr6hNA58CAqE,Alemán,latin hip hop,5979962,80,https://api.spotify.com/v1/artists/4QFG9KrGWEbr6hNA58CAqE,https://i.scdn.co/image/ab6761610000e5eb6c1d2882997b15d14a7a7661
+4QFG9KrGWEbr6hNA58CAqE,Alemán,electro corridos,5979962,80,https://api.spotify.com/v1/artists/4QFG9KrGWEbr6hNA58CAqE,https://i.scdn.co/image/ab6761610000e5eb6c1d2882997b15d14a7a7661
+5L1lO4eRHmJ7a0Q6csE5cT,LISA,k-pop,11281909,83,https://api.spotify.com/v1/artists/5L1lO4eRHmJ7a0Q6csE5cT,https://i.scdn.co/image/ab6761610000e5eb426faee7010fa829bb527cfb
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,corrido,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,corridos tumbados,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,corridos bélicos,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,música mexicana,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,banda,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,sierreño,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,electro corridos,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,sad sierreño,14474430,90,https://api.spotify.com/v1/artists/0ys2OFYzWYB5hRDLCsBqxt,https://i.scdn.co/image/ab6761610000e5eb7e2545f678354fc859de15f1
+790FomKkXshlbRYZFtlgla,KAROL G,reggaeton,55308427,88,https://api.spotify.com/v1/artists/790FomKkXshlbRYZFtlgla,https://i.scdn.co/image/ab6761610000e5eb4b0754aefc9db490e02205ec
+790FomKkXshlbRYZFtlgla,KAROL G,latin,55308427,88,https://api.spotify.com/v1/artists/790FomKkXshlbRYZFtlgla,https://i.scdn.co/image/ab6761610000e5eb4b0754aefc9db490e02205ec
+790FomKkXshlbRYZFtlgla,KAROL G,urbano latino,55308427,88,https://api.spotify.com/v1/artists/790FomKkXshlbRYZFtlgla,https://i.scdn.co/image/ab6761610000e5eb4b0754aefc9db490e02205ec
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,corrido,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,corridos tumbados,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,corridos bélicos,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,música mexicana,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,sad sierreño,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,electro corridos,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,banda,4638389,84,https://api.spotify.com/v1/artists/6Sbl0NT50roqWvy746MfVf,https://i.scdn.co/image/ab6761610000e5eb7f09c9c912a14580f87a2ea8
+7Ln80lUS6He07XvHI8qqHH,Arctic Monkeys,indie,29254556,87,https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH,https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f
+7Ln80lUS6He07XvHI8qqHH,Arctic Monkeys,garage rock,29254556,87,https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH,https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f

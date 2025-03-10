@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 from typing import Optional
+from datetime import datetime
 import re
 
 
@@ -15,6 +16,13 @@ def clean_name(name: str) -> str:
     # Encode and decode to ensure UTF-8 compatibility
     name = name.encode('utf-8', 'ignore').decode('utf-8')
     return name
+
+
+def fix_date(date_str):
+    if len(date_str) == 4:  # Only year is provided
+        return f"{date_str}-01-01"  # Default to January 1st of the year
+    else:
+        return date_str
 
 
 # Function to fetch playlist tracks
@@ -72,6 +80,9 @@ def get_playlist_tracks(playlist_id: str, access_token: str) -> Optional[pd.Data
 
         # Adding the rank column to keep track of the daily rank
         df_tracks['STREAM_RANK'] = df_tracks.index + 1
+        manual_date = datetime.now().strftime("%Y%m%d")
+        df_tracks['DATE_RANK'] = manual_date
+        df_tracks['RELEASE_DATE'] = df_tracks['RELEASE_DATE'].apply(fix_date)
 
         df_tracks.to_csv('./data/top_tracks.csv', index=False, encoding='utf-8')
 
